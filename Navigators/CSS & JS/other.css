@@ -1,0 +1,86 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive;
+    background-image: url('../Images/wallpaper.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background position */
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.chatbot-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatbot-container {
+    margin: 20px;
+    border: 0px solid #ccc;
+    max-width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer; /* Add this line to change the cursor to a pointer */
+}
+
+.chat-header {
+    font-weight: bold;
+}
+
+.chat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Set background images for Send buttons and fixed size */
+#chatbot1 .send-button {
+    border: 0px solid #ccc;
+    cursor: pointer;
+    background-image: url('../Images/zoro.png');
+    background-size: cover;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+}
+
+#chatbot2 .send-button {
+    border: 0px solid #ccc;
+    cursor: pointer;
+    background-image: url('../Images/Naruto.png');
+    background-size: cover;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+}
+
+#chatbot3 .send-button {
+    background-image: url('image3.jpg');
+    background-size: cover;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+}
+
+#chatbot4 .send-button {
+    background-image: url('image4.jpg');
+    background-size: cover;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+}
+
+#chatbot5 .send-button {
+    background-image: url('image5.jpg');
+    background-size: cover;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+}

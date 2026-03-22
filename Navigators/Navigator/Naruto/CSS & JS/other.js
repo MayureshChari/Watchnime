@@ -1,0 +1,48 @@
+const chatOutput = document.querySelector('.chat-message');
+const initialMessage = "Lady tsunade said i here to asist you to the desired location and protect you from any enemy but first can you choose between Anime Series and Anime Movies";
+displayResponseOneCharacterAtATime(chatOutput, initialMessage);
+
+function displayResponseOneCharacterAtATime(element, response) {
+    const delay = 50;
+    let index = 0;
+
+    function appendText() {
+        if (index < response.length) {
+            element.innerHTML += response.charAt(index);
+            index++;
+            setTimeout(appendText, delay);
+        } else {
+            // Show the first set of options after the initial message
+            document.getElementById('options').style.display = 'block';
+        }
+    }
+
+    appendText();
+}
+
+function chooseOption(option) {
+    const confirmMessage = "Confirm please";
+    chatOutput.innerHTML = confirmMessage;
+    document.getElementById('options').style.display = 'none';
+
+    if (option === 'Anime Series') {
+        document.getElementById('separateOptions').style.display = 'block';
+    } else if (option === 'Anime Movies') {
+        window.location.href = '#'; // Redirect to the Movies page
+        chatOutput.innerHTML = "Let's go!";
+    }
+}
+
+function chooseOptionTwo(option) {
+    const confirmMessage = "Confirm please";
+    chatOutput.innerHTML = confirmMessage;
+    document.getElementById('separateOptions').style.display = 'none';
+
+    if (option === 'Watched') {
+        window.location.href = '#'; // Redirect to the Watched page
+        chatOutput.innerHTML = "Let's go!";
+    } else if (option === 'Watching') {
+        window.location.href = '#'; // Redirect to the Watching page
+        chatOutput.innerHTML = "Let's go!";
+    }
+}

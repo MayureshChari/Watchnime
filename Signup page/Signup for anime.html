@@ -1,0 +1,102 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.signup-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Signup Form</title>
+</head>
+<body>
+    <div class="signup-form">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="button" id="signupButton">Sign Up</button>
+        </form>
+    </div>
+    <div id="successPopup" class="popup">
+        <h2>Signup Successful!</h2>
+        <p>Your details have been stored.</p>
+    </div>
+    <script>
+document.getElementById("signupButton").addEventListener("click", function() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (name.trim() === "" || email.trim() === "" || password === "") {
+        alert("Please fill in all the fields.");
+        return;
+    }
+
+    // Make an AJAX request to the PHP file
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "Anime.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // If PHP response indicates success, redirect to another HTML page
+            if (xhr.responseText === "success") {
+                window.location.href = "Anime.html";
+            } else {
+                alert("Signup failed. Please try again.");
+            }
+        }
+    };
+    
+    const data = "name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&password=" + encodeURIComponent(password);
+    xhr.send(data);
+});
+
+
+</script>
+</body>
+</html>

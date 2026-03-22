@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../Images/wallpaper.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background position */
+    margin: 0;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chat-message {
+    width: 70%;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.chat-image {
+    width: 30%;
+}
+
+.chat-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.options-container {
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide options initially */
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.options button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6347; /* Orange-Red */
+    color: #ffeb3b; /* Yellow */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #ff7f50; /* Lighter shade of Orange-Red */
+}
+
+.options button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.5); /* Orange-Red with transparency */
+}
+
+
+
+.separate-options {
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide separate options initially */
+}
+
+.separate-options button {
+    margin: 0 10px; /* Add margin to the buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff5733; /* Bright Orange */
+    color: #ffec89; /* Pale Yellow */
+    border: 2px solid #ff5733; /* Matching border color */
+    border-radius: 25px; /* Slightly rounded border */
+    cursor: pointer;
+    outline: none; /* Remove default focus outline */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.separate-options button:hover {
+    background-color: #ff814b; /* Lighter shade of orange */
+    color: #fff; /* White text on hover */
+    border-color: #ff814b; /* Matching border color on hover */
+}
+
+.separate-options button:focus {
+    box-shadow: 0 0 0 3px rgba(255, 87, 51, 0.5); /* Orange border on focus */
+}

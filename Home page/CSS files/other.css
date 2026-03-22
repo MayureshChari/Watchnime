@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-image: url('../Images/Wallpaper/Wallpaper.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background position */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.down {
+    text-align: center;
+    padding: 80px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 0; /* Remove default margin */
+    text-align: center;
+    color: rgb(4, 252, 107);
+}
+
+h6 .img {
+    width: 24px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+h6 {
+    text-align: center;
+}
+
+p {
+    font-size: 24px; /* Increase font size to 24px */
+    text-align: center; /* Center the <p> tag */
+    color: rgb(1, 53, 22);
+}
+
+/* Centered buttons */
+.centered-buttons {
+    margin-right: -20px;
+    margin-top: 130px; /* Add margin to move buttons down */
+}
+
+
+/* Buttons in different corners */
+/* Base button style */
+.top-right, .bottom-right, .bottom-left {
+    position: absolute; /* Use relative positioning for stacking elements */
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #64fa00; /* Use a bright color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 24px; /* Larger font size */
+    text-transform: uppercase; /* Uppercase text */
+    font-family: 'Comic Sans MS', cursive; /* Comic Sans MS font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for a comic book effect */
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Style for button hover effect */
+.top-right:hover, .bottom-right:hover, .bottom-left:hover {
+    background-color: #00ff6a; /* Lighter color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow on hover */
+}
+
+
+.top-right {
+    top: 55px;
+    right: 45px;
+}
+
+.bottom-right {
+    bottom: 40px;
+    right: 35px;
+}
+
+.bottom-left {
+    bottom: 40px;
+    left: 25px;
+}
+
+/* Style for the image in the top-left corner */
+.top-left-image {
+    position: absolute;
+    top: 55px;
+    left: 75px;
+    width: 227px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Additional margin to move content down */
+.content-container {
+    margin-top: 50px;
+}
+

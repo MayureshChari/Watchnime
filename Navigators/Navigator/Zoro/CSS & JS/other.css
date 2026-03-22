@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../Images/wallpaper.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background position */
+    margin: 0;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chat-message {
+    width: 70%;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.chat-image {
+    width: 30%;
+}
+
+.chat-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.options-container {
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide options initially */
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.options button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #36af46;
+    color: #073a03;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.separate-options {
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide separate options initially */
+}
+
+.separate-options button {
+    margin: 0 10px; /* Add margin to the buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #088318;
+    color: #00fc69;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+================== Website Info ===============
+
+1. Contact Page
+    HTML /
+    CSS /
+
+2. Home Page
+    HTML  /
+    JS    /
+    CSS x 3  /
+
+3. Feedback Page
+    HTML   /
+
+4. Signup Page
+    HTML    /
+
+5. Navigators 
+    HTML   / 
+    JS   /
+    CSS   / 
+
+6. Zoro & Naruto
+    HTML   /
+    CSS   /
+    JS  /
+
+7. Destination
+    CSS x 2  /
+    JS   /
+
+8. Watching & Watched & Anime Movies
+    HTML /
+    JS  /
+
+9. Naruto Destination
+    HTML x 2  /
+    CSS  /
+    JS  /
+
+10. Anime I Am Watching
+    HTML   /
+    CSS x 2   /
+
+11. Data
+    HTML   /
+    CSS x 3  /
+    JS x 2   /
+
+12. All The Years   /
+
+13. Bucket List
+    HTML /
+    CSS  /
+    JS   /
+
+14. Anime I Watched
+    HTML    /
+    JS x 2    /
+    CSS x 3    /
+
+15. Anime Movies
+    HTML  
+    CSS
+    JS     

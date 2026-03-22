@@ -1,0 +1,43 @@
+.full{
+    color: #ffffff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Contact.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background position */
+}
+
+h1{
+    text-align: center;
+}
+.user-info {
+    text-align: center;
+    margin: 20px auto;
+    border: 0px solid #ddd;
+    padding: 12px;
+}
+.sub-table-container {
+    text-align: center;
+    margin-top: 10px;
+}
+.sub-table {
+    border-collapse: collapse;
+    display: inline-block;
+}
+.sub-table th, .sub-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+.sub-table th {
+    background-color: #f2f2f2;
+}
+.top-left-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 240px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+}

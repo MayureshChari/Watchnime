@@ -1,0 +1,20 @@
+
+  #sprite {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px; /* Adjust the size of the sprite */
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  #textBox {
+    position: absolute;
+    bottom: 290px;
+    right: 175px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
